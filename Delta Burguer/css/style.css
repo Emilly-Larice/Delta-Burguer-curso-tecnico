@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity:0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: flex;           /* Usando flexbox para alinhamento */
+    align-items: center;     /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+}
+
+.logo img {
+    height: 2em;            /* Define a altura das imagens para 2em */
+    width: auto;            /* Mantém a proporção da imagem */
+    margin-right: 8px;      /* Espaço entre a imagem e o texto */
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background: orange;
+    height: 8vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-size: 18px;
+}
+.nav-list li img{
+    height: 2em;  /* Define a altura das imagens para 1em (tamanho da fonte) */
+    width: auto;  /* Mantém a proporção da imagem */
+    margin-right: 8px; /* Espaço entre a imagem e o texto */
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+width: 32px;
+height:2px ;
+background:#fff;
+margin:8px
+
+}
+
+
+.carrossel {
+    position: relative;
+    width: 50%; /* Largura do carrossel será metade da largura da tela */
+    max-width: 650px; /* Limite máximo do carrossel */
+    margin-left: 0; /* Alinhar à esquerda */
+    overflow: hidden; /* Esconde as imagens fora da área visível */
+    margin-top: 20px; /* Espaçamento superior, caso necessário */
+    margin-left: 60px;
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease; /* Transição suave para o movimento das imagens */
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para as setas */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left:20px;
+}
+
+.next {
+    right: 760px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para as imagens à direita */
+.right-images {
+    position: absolute;
+    top: 80px; /* Alinha as imagens abaixo do cabeçalho, ajustando conforme necessário */
+    margin-right: 30px;
+    right: 20px; /* Alinha as imagens à direita da tela */
+    display: flex;
+    flex-direction: column; /* Organiza as imagens uma embaixo da outra */
+    gap: 30px; /* Espaçamento entre as imagens */
+}
+
+.right-images img {
+    width: 650px; /* Largura fixa para as imagens */
+    height: 305px;
+}
+
+.cardapio-imagem{
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem na tela */
+    background-attachment: fixed; /* Fixar a imagem para não mover ao rolar a página */
+    height: 100vh; /* 100% da altura da tela */
+    width: 100%; /* 100% da largura da tela */
+}
+
+.about-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 60PX;
+}
+
+.text {
+    flex: 1;
+    max-width: 50%;  /* O texto ocupa 50% da largura */
+    padding-right: 20px; /* Espaço entre o texto e as imagens */
+    margin-left: 90px;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.text strong {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media a {
+    margin: 0 15px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.privacy-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.privacy-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.privacy-links a:hover {
+    text-decoration: underline;
+}
+
+.privacy-links span {
+    font-size: 14px;
+    color: #bbb;
+}

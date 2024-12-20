@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardapio</title>
+    <style>
+        body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%; /* Garantir que a altura da página ocupe 100% da tela */
+     }
+
+     img.fullscreen-image {
+        width: 100%;     /* A imagem vai ocupar toda a largura da tela */
+        height: 100vh;   /* A imagem vai ocupar toda a altura da tela */
+         object-fit: contain; /* Garante que a imagem não seja cortada e mantenha a proporção */
+     }
+        .titulo-vertical {
+        writing-mode: vertical-rl;  /* Torna o texto vertical */
+        transform: rotate(180deg);  /* Gira o texto para que ele fique na direção correta */
+        font-size: 80px;            /* Ajuste o tamanho da fonte conforme necessário */
+        font-weight: bold;          /* Torna o texto mais grosso (opcional) */
+        position: absolute;         /* Posiciona o título */
+        left: 0;                    /* Alinha o título ao lado esquerdo da tela */
+        top:100px;                   /* Centraliza verticalmente na tela */
+        margin-left: 20px;
+        transform-origin: center;   /* Garante que a rotação seja feita de maneira centralizada */
+        white-space: nowrap;        /* Evita que o texto quebre em várias linhas */
+     }
+     .titulo-vertical2 {
+        writing-mode: vertical-rl;  /* Torna o texto vertical */
+        font-size: 80px;            /* Ajuste o tamanho da fonte conforme necessário */
+        font-weight: bold;          /* Torna o texto mais grosso (opcional) */
+        position: absolute;         /* Posiciona o título */
+        right: 0;                    /* Alinha o título ao lado esquerdo da tela */
+        top:100px;                   /* Centraliza verticalmente na tela */
+        margin-right: 20px;
+        transform-origin: center;   /* Garante que a rotação seja feita de maneira centralizada */
+        white-space: nowrap;        /* Evita que o texto quebre em várias linhas */
+     }
+     
+    </style>
+</head>
+
+<body>
+    <img src="imagem/cardapio.png" alt="Imagem grande" class="fullscreen-image">
+
+    <div class="titulo-vertical">
+        CARDÁPIO
+    </div>
+
+    <div class="titulo-vertical2">
+        CARDÁPIO
+    </div>
+</body>
+</html>

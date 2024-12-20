@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card - Tricodando Lab</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      font-family: "Arial";
+      gap: 16px;
+      background-image: url("tricodando.png");
+      flex-wrap: wrap; /* <--- Mudança: Permite a quebra de linha dos cards */
+    }
+
+    header{
+        margin-top: 20px;
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        background-color: orange;
+        width: 1000px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .card-container { 
+      display: flex;
+      flex-wrap: wrap; /* <--- Mudança: Permite que os cards se organizem em várias linhas */
+      gap: 16px; /* <--- Mudança: Espaço entre os cards */
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 1280px; /* <--- Mudança: Limita a largura total do contêiner */
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 180px;
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 4px 4px 12px #aaaa;
+      flex: 0 0 16.66%; /* <--- Mudança: Garante que 6 cards caibam em uma linha */
+      box-sizing: border-box; /* <--- Mudança: Inclui o padding e a borda no tamanho total */
+      margin-left: 70px;
+      
+    }
+
+    .card img {
+      width: 100%;
+      height: 130px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .card div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      height: 50%;
+    }
+
+    .card h1 {
+      font-size: 1.2rem;
+    }
+
+    .card h2 {
+      font-size: .9rem;
+      color: #aaaa;
+    }
+
+    .card button {
+      background-color: orange;
+      height: 30px;
+      border: none;
+      padding: 4px;
+      width: 80%;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .card button:hover {
+      background-color: orangered;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <header> 
+        <h1>FAÇA SEU PEDIDO</h1>
+    </header>
+  <div class="card-container"> <!-- <--- Mudança: Contêiner dos cards -->
+    <div class="card">
+      <img src="https://cdn.neemo.com.br/uploads/item/photo/865218/smashzinho_Easy-Resize.webp">
+      <div>
+        <h1>Smashizinho</h1>
+        <h2>Pão tostado, 01 blend bovino 130g, 02 fatias de queijo cheddar, cebola na chapa .</h2>
+        <span>R$ 29,90</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.neemo.com.br/uploads/item/photo/831638/gulla_bacon_Easy-Resize.webp">
+      <div>
+        <h1>X-Bacon</h1>
+        <h2>Pão artesanal, 130g de blend bovino, queijo cheddar, molho especial, salada, batata frita.</h2>
+        <span>R$ 30,90</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.neemo.com.br/uploads/item/photo/1598478/cheddar_bacon_Easy-Resize.webp">
+      <div>
+        <h1>X-Cheddar Bacon</h1>
+        <h2>Pão artesanal brioche, 130g de blend bovino , queijo cheddar , bacon em cubo, batata frita.</h2>
+        <span>R$ 33,90</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.neemo.com.br/uploads/item/photo/524667/calabresa_Easy-Resize.webp">
+      <div>
+        <h1>X-calabresa</h1>
+        <h2>Pão artesanal, 130g de blend de costela, queijo cheddar (2x),linguiça calabresa (2x) e cebola roxa.</h2>
+        <span>R$ 36,50</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.neemo.com.br/uploads/item/photo/2505613/vegetariano_Easy-Resize.webp">
+      <div>
+        <h1>X-Onions</h1>
+        <h2>Pão artesanal brioche, 130gr de blend bovino, onions(3x), queijo cheddar, fatias de bacon, cebola roxa, salada.</h2>
+        <span>R$ 38,30</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.neemo.com.br/uploads/item/photo/2505612/vegetariano_Easy-Resize.webp">
+      <div>
+        <h1>X-Vegetariano</h1>
+        <h2>Pão com gergelim, carne vegetal, queijo prato (2x), salada, ovo, cebola roxa, molho especial, onions</h2>
+        <span>R$ 38,90</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn.neemo.com.br/uploads/item/photo/865218/smashzinho_Easy-Resize.webp">
+        <div>
+          <h1>X-Tudo</h1>
+          <h2>Pão, 02blend de costela 130g, queijo, presunto, bacon, ovo, slada, batata, milho, molho especial.</h2>
+          <span>R$ 22,50</span>
+          <button>Adicionar</button>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn.neemo.com.br/uploads/item/photo/658257/picles_Easy-Resize.webp">
+        <div>
+          <h1>X-Egg Bacon</h1>
+          <h2>Pão de brioche prime tostado c/ manteiga, Blend de costela 130g, Cheddar, Cebola roxa, Picles, Bacon fatia, , Batata frita.</h2>
+          <span>R$ 17,30</span>
+          <button>Adicionar</button>
+        </div>
+      </div>
+  
+     
+    
+    <!-- Adicione mais cards aqui, se necessário -->
+  </div>
+</body>
+</html>
